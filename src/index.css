@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+code, kbd, samp, pre, .font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom cyber scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.5);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}
+
+/* White / Light Theme Overrides */
+html.light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html.light header {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light header span.text-white,
+html.light header .text-white {
+  color: #0f172a !important;
+}
+
+html.light aside {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light aside .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light main {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-slate-950,
+html.light .bg-slate-950\/90,
+html.light .bg-slate-950\/95,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/60 {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-slate-900,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/90 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light .border-slate-800,
+html.light .border-slate-800\/80,
+html.light .border-slate-900 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .text-white,
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light footer {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Light mode scrollbar adjustments */
+html.light ::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.8);
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}
+
+/* Cyber Matrix scanning lines and animations */
+@keyframes cyberScan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.animate-scanline {
+  animation: cyberScan 6s linear infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.85; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
